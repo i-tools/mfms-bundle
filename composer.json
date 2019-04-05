@@ -1,0 +1,36 @@
+{
+    "name": "itools/mfms-bundle",
+    "description": "Сервис для отправки sms-сообщений через шлюз https://mfms.ru/",
+    "type": "symfony-bundle",
+    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "symfony/config": "^4.2",
+        "symfony/framework-bundle": "^4.2",
+        "symfony/dependency-injection": "^4.2",
+        "symfony/http-foundation": "^4.2",
+        "swiftmailer/swiftmailer": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "symfony/phpunit-bridge": "^4.2",
+        "symfony/yaml": "^4.2",
+        "fzaninotto/faker": "^1.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Krasnov",
+            "email": "itools.tmn@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "itools\\MFMSGatewayBundle\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    }
+}

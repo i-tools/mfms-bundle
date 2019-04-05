@@ -1,0 +1,11 @@
+services:
+  mfmsgateway:
+    class: itools\MFMSGatewayBundle\MFMSGateway
+    arguments:
+      - '%mfmsgateway.url%'
+      - '%mfmsgateway.login%'
+      - '%mfmsgateway.password%'
+      - '@logger'
+
+  itools\MFMSGatewayBundle\MFMSGateway:
+    alias: mfmsgateway
